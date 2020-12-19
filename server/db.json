@@ -1,19 +1,7 @@
 {
   "employee": [
     {
-      "name": "Amir",
-      "departMent": [
-        "HR"
-      ],
-      "gender": "male",
-      "salary": "50000",
-      "startDate": "1 Jan 2020",
-      "notes": "",
-      "id": 1604589594365,
-      "profileUrl": "../../assets/profile-images/Ellipse 1.png"
-    },
-    {
-      "name": "Mohit Mohit",
+      "name": "Mohit Mohita",
       "departMent": [
         "Engineer"
       ],
@@ -139,36 +127,6 @@
       "notes": "Test",
       "id": 1604589594381,
       "profileUrl": "../../assets/profile-images/Ellipse -3.png"
-    },
-    {
-      "name": "",
-      "departMent": [],
-      "gender": "",
-      "salary": "",
-      "startDate": "1 Jan 2020",
-      "notes": "",
-      "id": 1604589594382,
-      "profileUrl": ""
-    },
-    {
-      "name": "",
-      "departMent": [],
-      "gender": "",
-      "salary": "",
-      "startDate": "1 Jan 2020",
-      "notes": "",
-      "id": 1604589594383,
-      "profileUrl": ""
-    },
-    {
-      "name": "",
-      "departMent": [],
-      "gender": "",
-      "salary": "",
-      "startDate": "1 Jan 2020",
-      "notes": "",
-      "id": 1604589594384,
-      "profileUrl": ""
     },
     {
       "name": "Ravi",
