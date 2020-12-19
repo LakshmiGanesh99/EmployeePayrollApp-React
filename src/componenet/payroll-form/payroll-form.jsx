@@ -195,14 +195,12 @@ const PayrollForm = (props) => {
           </div>
           <div className="error" > {formValue.error.department} </div>
 
-
           <div className="row">
             <label className="label text" htmlFor="salary">Salary</label>
             <input className="input" type="range" onChange={changeValue} id="salary" value={formValue.salary} name="salary" placeholder="Salary"
               min="1000" max="10000" step="100" />
+            <div className="error" > {formValue.error.salary} </div>
           </div>
-          <div className="error" > {formValue.error.salary} </div>
-
 
           <div className="row">
             <label className="label text" htmlFor="startDate">Start Date</label>
