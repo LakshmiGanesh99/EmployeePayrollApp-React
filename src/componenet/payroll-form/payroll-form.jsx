@@ -37,17 +37,30 @@ const PayrollForm = (props) => {
       department: '',
       name: '',
       gender: '',
-      salary: '5000',
+      salary: '',
       profileUrl: '',
       startDate: ''
     }
   }
   const [formValue, setForm] = useState(initialValue);
+  const params = useParams();
   const employeeService = new EmployeeService();
+
+  const setData = (obj) => {
+    let array = obj.startDate.split(" ");
+    setForm({
+      ...formValue,
+      ...obj,
+      departMentValue: obj.departMent,
+      isUpdate: true,
+      day: array[0],
+      month: array[1],
+      year: array[2],
+    });
+  };
 
   const changeValue = (event) => {
     setForm({ ...formValue, [event.target.name]: event.target.value })
-    console.log(event.target.value)
   }
 
   const onCheckChange = (name) => {
@@ -97,11 +110,14 @@ const PayrollForm = (props) => {
     }
     await setForm({ ...formValue, error: error })
     return isError;
-
-
   }
   const save = async (event) => {
     event.preventDefault();
+    if (await validData()) {
+      console.log("error", formValue);
+      return;
+    }
+
     let object = {
       name: formValue.name,
       departMent: formValue.departMentValue,
@@ -112,13 +128,14 @@ const PayrollForm = (props) => {
       id: formValue.id,
       profileUrl: formValue.profileUrl,
     };
+
     employeeService.addEmployee(object)
       .then((data) => {
-        console.log("data added");
+        console.log("Data added succesfully");
         props.history.push("");
       })
       .catch((err) => {
-        console.log("err while Add");
+        console.log("error while Add");
       });
   };
 
@@ -195,12 +212,14 @@ const PayrollForm = (props) => {
           </div>
           <div className="error" > {formValue.error.department} </div>
 
+
           <div className="row">
             <label className="label text" htmlFor="salary">Salary</label>
             <input className="input" type="range" onChange={changeValue} id="salary" value={formValue.salary} name="salary" placeholder="Salary"
               min="1000" max="10000" step="100" />
-            <div className="error" > {formValue.error.salary} </div>
           </div>
+          <div className="error" > {formValue.error.salary} </div>
+
 
           <div className="row">
             <label className="label text" htmlFor="startDate">Start Date</label>

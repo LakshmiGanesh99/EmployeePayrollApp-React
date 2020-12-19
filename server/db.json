@@ -139,6 +139,62 @@
       "notes": "Test",
       "id": 1604589594381,
       "profileUrl": "../../assets/profile-images/Ellipse -3.png"
+    },
+    {
+      "name": "",
+      "departMent": [],
+      "gender": "",
+      "salary": "",
+      "startDate": "1 Jan 2020",
+      "notes": "",
+      "id": 1604589594382,
+      "profileUrl": ""
+    },
+    {
+      "name": "",
+      "departMent": [],
+      "gender": "",
+      "salary": "",
+      "startDate": "1 Jan 2020",
+      "notes": "",
+      "id": 1604589594383,
+      "profileUrl": ""
+    },
+    {
+      "name": "",
+      "departMent": [],
+      "gender": "",
+      "salary": "",
+      "startDate": "1 Jan 2020",
+      "notes": "",
+      "id": 1604589594384,
+      "profileUrl": ""
+    },
+    {
+      "name": "Ravi",
+      "departMent": [
+        "HR",
+        "Sales"
+      ],
+      "gender": "male",
+      "salary": "6400",
+      "startDate": "1 Feb 2020",
+      "notes": "Notes",
+      "id": 1604589594385,
+      "profileUrl": "../../assets/profile-images/Ellipse -3.png"
+    },
+    {
+      "name": "Swetha",
+      "departMent": [
+        "Sales",
+        "Finance"
+      ],
+      "gender": "male",
+      "salary": "6700",
+      "startDate": "2 Jan 2020",
+      "notes": "Notes",
+      "id": 1604589594386,
+      "profileUrl": "../../assets/profile-images/Ellipse -3.png"
     }
   ]
 }

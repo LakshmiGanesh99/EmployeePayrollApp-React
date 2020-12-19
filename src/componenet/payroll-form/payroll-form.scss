@@ -115,11 +115,12 @@ label {
     resize: vertical;
 }
 
-error-output {
+.error{
     font-size: 12px;
     font-style: italic;
     color: red;
     margin-left: 10px;
+    text-align: end;
 }
 
 .profile-radio-content{
