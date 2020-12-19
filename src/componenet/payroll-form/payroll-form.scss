@@ -11,7 +11,6 @@
     height: 100%;
     min-height: calc(100% - 80px);
     background-color: #f7f7f7;
-    
     justify-content: center;
     align-items: center;
     padding: 0;
@@ -84,7 +83,7 @@
     padding-bottom: 20px;
 }
 
-.row-content{
+.row-content {
     display: flex;
     flex-direction: row;
     margin-bottom: 10px;
@@ -92,30 +91,35 @@
     border: 0px solid green;
 }
 
-.label{
+.label {
     min-width: 140px;
 }
 
-label{
+label {
     padding: 12px 12px 12px 0;
     display: inline-block;
-    
 }
 
-.text{
+.text {
     font-size: 16px;
     color: #42515f;
     opacity: 1;
     font-family: Roboto;
 }
 
-.input{
+.input {
     width: 100%;
     padding: 12px;
-    border: 1px solid #ccc;
     border-radius: 4px;
+    border: 1px solid #ccc;
     resize: vertical;
-    
+}
+
+error-output {
+    font-size: 12px;
+    font-style: italic;
+    color: red;
+    margin-left: 10px;
 }
 
 .profile-radio-content{

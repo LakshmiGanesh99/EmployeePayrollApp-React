@@ -12,7 +12,7 @@ function App() {
               <PayrollForm />
             </Route>
           </Switch>
-        </Router> 
+        </Router>  
     </div>
      
   );
