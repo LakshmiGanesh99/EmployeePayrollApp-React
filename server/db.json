@@ -126,6 +126,19 @@
       "notes": "",
       "id": 1604589594380,
       "profileUrl": "../../assets/profile-images/Ellipse -8.png"
+    },
+    {
+      "name": "Avinash",
+      "departMent": [
+        "HR",
+        "Sales"
+      ],
+      "gender": "male",
+      "salary": "6300",
+      "startDate": "3 Jan 2020",
+      "notes": "Test",
+      "id": 1604589594381,
+      "profileUrl": "../../assets/profile-images/Ellipse -3.png"
     }
   ]
 }
